@@ -111,7 +111,6 @@ a {
 }
 
 a:hover {
-  color: var(--secondary-color);
   text-decoration: underline;
 }
 
@@ -267,6 +266,16 @@ li {
 
 .added-image {
   width: 90%;
+}
+
+h3 a {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
