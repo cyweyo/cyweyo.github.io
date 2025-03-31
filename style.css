@@ -266,11 +266,7 @@ li {
 }
 
 .added-image {
-  flex-direction: row;
-  align-items: center;
-  align-content: center;
-
-  width: 700px;
+  width: 90%;
 }
 
 @media (max-width: 768px) {
