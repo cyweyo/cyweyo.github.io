@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <header>
       <div class="container header-content">
@@ -18,7 +19,12 @@
         <ul class="contact-info">
           <li><strong>Phone:</strong> 010-9497-1021</li>
           <li><strong>Email:</strong> cyw7715@gmail.com</li>
-          <li><strong>Blog:</strong> <a href="https://velog.io/@overslept" target="_blank"> velog.io/@overslept</a></li>
+          <li>
+            <strong>Blog:</strong>
+            <a href="https://velog.io/@overslept" target="_blank">
+              velog.io/@overslept</a
+            >
+          </li>
           <li>
             <strong>Github:</strong>
             <a href="https://github.com/cyweyo" target="_blank"
@@ -30,87 +36,370 @@
     </header>
 
     <div class="container">
-      <section class="intro-section">
-        <h2 class="intro-header">소개</h2>
-        <ul class="intro-list">
-          <li>
-            React, React Native, TypeScript를 활용한
-            <strong>웹 프론트엔드 개발자</strong>입니다.
-          </li>
-          <li>
-            최적화된 사용자 경험을 위한
-            <strong>성능 최적화와 효율적인 상태 관리</strong>에 집중합니다.
-          </li>
-          <li>
-            <strong>직관적인 UI</strong>와 모던 웹 기술을 적용해 유지보수 가능한
-            코드를 작성합니다.
-          </li>
-        </ul>
+      <div class="insight">
+        <h2>💻 소개</h2>
+        <div class="insight">
+          <div class="insight-body">
+            <ul>
+              <li>
+                <div class="intro-block">
+                  <p class="intro-identity">
+                    <strong>기능보다 개념에 질문합니다</strong>
+                  </p>
+                  <p>
+                    React 훅을 사용할 때 내부
+                    <strong>동작 원리를 먼저 파악</strong>하고, 이해되지 않는
+                    코드는 직접 실험하면서 학습합니다.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="intro-block">
+                  <p class="intro-identity">
+                    <strong>기존 방식에 의문을 가집니다</strong>
+                  </p>
+                  <p>
+                    불필요하게 <strong>복잡한 구조나 반복된 상태 관리</strong>가
+                    있을 때, 더 단순화할 수 있는 구조를 고민하고 적용합니다.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="intro-block">
+                  <p class="intro-identity">
+                    <strong>작동보다 흐름을 중시합니다</strong>
+                  </p>
+                  <p>
+                    유저 입장에서의 사용 흐름이 자연스럽도록, 기능 우선이 아닌
+                    <strong>UX 우선 순서로</strong> 페이지를 설계했습니다.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <section class="project-section">
+        <div class="project">
+          <h2>🚀 프로젝트 소개</h2>
+          <div class="insight">
+            <div class="insight-title">
+              <h3>
+                <a href="https://linkrew.com" target="_blank">Linkrew</a>
+              </h3>
+            </div>
+
+            <div class="insight-body">
+              <p><strong>기간:</strong> 2025.04 ~ 2025.07</p>
+              <p>
+                <strong>기술 스택:</strong> React, TypeScript, Zustand, Axios,
+                React Query, TailwindCSS
+              </p>
+              <p>
+                <strong>유형:</strong> 웹페이지 저장 및 공유 서비스 (팀
+                프로젝트, FE 2 / BE 2)
+              </p>
+
+              <p style="margin-top: 16px">
+                웹사이트 링크를 <strong>페이지·폴더 단위</strong>로 정리하고, 각
+                링크가 어떤 콘텐츠인지 <strong>직관적으로 확인</strong>할 수
+                있으며,<br />
+                정리된 링크들을 다른 사용자와 <strong>손쉽게 공유</strong>할 수
+                있는 웹 서비스입니다.
+              </p>
+            </div>
+          </div>
+
+          <div class="insight">
+            <div class="insight-title">역할</div>
+            <div class="insight-body">
+              <ul>
+                <li>
+                  <strong>폴더/링크 CRUD 구현:</strong> React Query와 Zustand를
+                  활용해 <strong>일관된 상태 관리</strong>와
+                  <strong>효율적인 캐시 처리</strong> 구현
+                </li>
+                <li>
+                  <strong>실시간 알림 기능:</strong> EventSource 기반 SSE 직접
+                  구현, CORS 이슈를 헤더 설정으로 해결
+                </li>
+                <li>
+                  <strong>인증 흐름 개선:</strong> 토큰 만료 시 자동 리이슈
+                  처리, UX를 고려한 인증 유지 흐름 설계
+                </li>
+                <li>
+                  <strong>회원 기능:</strong> 책임 단위 분리로
+                  <strong>사용자 관리의 일관성 및 유지보수성 향상</strong>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="insight">
+            <div class="insight-title">주요 개발 성과</div>
+            <div class="insight-body">
+              <ul>
+                <li>
+                  <strong>링크별 대표 이미지 제공</strong>으로 콘텐츠 인지력
+                  향상 (YouTube 썸네일, 블로그 OG 이미지 등)
+                </li>
+                <li>
+                  <strong>SSE 알림 시스템 구축:</strong> 직접 백엔드와 연결 및
+                  파싱 처리로 <strong>실시간 알림 기능 완성</strong>
+                </li>
+                <li>
+                  <strong>웹 서비스 아키텍처 전반에 대한 이해도 향상:</strong>
+                  확장성과 재사용성을 고려한 컴포넌트 설계 경험 축적
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <h2>🚧 Trouble Shooting</h2>
+          <div class="troubleshooting-card">
+            <div class="ts-item">
+              <div class="ts-icon">🛠️</div>
+              <div>
+                <div class="ts-label">문제</div>
+                <div class="ts-content">
+                  실시간 알림 기능을 구현하던 중, 알림 연결이 되지 않는 문제가
+                  발생
+                </div>
+              </div>
+            </div>
+            <div class="ts-item">
+              <div class="ts-icon">💡</div>
+              <div>
+                <div class="ts-label">해결</div>
+                <div class="ts-content">
+                  브라우저의 EventSource 객체가 프록시를 통하지 않고 직접 서버에
+                  요청을 보내는 구조임을 파악했습니다. 프론트 개발 서버와 백엔드
+                  간 CORS 정책 충돌이 발생한 것이 원인이었고, 이에 따라 알림
+                  요청을 프론트 프록시가 아닌 실제 백엔드 도메인으로 연결하고,
+                  서버 측에서 <code>Access-Control-Allow-Origin</code> 및 관련
+                  헤더를 설정하도록 백엔드와 협의하여 문제를 해결했습니다.
+                </div>
+              </div>
+            </div>
+            <div class="ts-item">
+              <div class="ts-icon">✅</div>
+              <div>
+                <div class="ts-label">성과</div>
+                <div class="ts-content">
+                  실시간 알림이 안정적으로 작동했고, 사용자 액션에 따른 UI
+                  반영도 자연스럽게 구현됨
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="troubleshooting-card">
+            <div class="ts-item">
+              <div class="ts-icon">🛠️</div>
+              <div>
+                <div class="ts-label">문제</div>
+                <div class="ts-content">
+                  대부분의 API 요청은 정상 동작했지만, PATCH 요청만 CORS 오류로
+                  실패함
+                </div>
+              </div>
+            </div>
+            <div class="ts-item">
+              <div class="ts-icon">💡</div>
+              <div>
+                <div class="ts-label">해결</div>
+                <div class="ts-content">
+                  브라우저가 PATCH 요청과 같이 민감한 HTTP 메서드를 사용할 경우,
+                  사전 확인 요청(Preflight, OPTIONS)을 자동으로 보내는 구조임을
+                  확인했습니다. 이 요청에 대해 백엔드가 CORS 허용 응답
+                  헤더(<code>Access-Control-Allow-Methods</code>,
+                  <code>Access-Control-Allow-Headers</code>)를 반환하지 않아
+                  오류가 발생한 것이었습니다. 문제 원인을 명확히 분석한 뒤,
+                  백엔드에 필요한 헤더 값을 전달하고, 서버 코드를 수정하여 CORS
+                  에러를 해결했습니다.
+                </div>
+              </div>
+            </div>
+            <div class="ts-item">
+              <div class="ts-icon">✅</div>
+              <div>
+                <div class="ts-label">성과</div>
+                <div class="ts-content">
+                  CORS 관련 이슈 해결로 PATCH 요청 안정화, 다양한 HTTP 메서드
+                  지원 기반 구축
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="troubleshooting-card">
+            <div class="ts-item">
+              <div class="ts-icon">🛠️</div>
+              <div>
+                <div class="ts-label">문제</div>
+                <div class="ts-content">
+                  로그인 상태가 일정 시간 후 만료되면서, 사용자 경험이 끊기는
+                  문제
+                </div>
+              </div>
+            </div>
+            <div class="ts-item">
+              <div class="ts-icon">💡</div>
+              <div>
+                <div class="ts-label">해결</div>
+                <div class="ts-content">
+                  AccessToken이 만료된 경우, 사용자는 로그인을 다시 해야 하는
+                  불편이 있었습니다. 이를 해결하기 위해 RefreshToken을 이용한
+                  자동 토큰 갱신 흐름을 설계했고, 토큰이 만료될 경우 전용 리이슈
+                  페이지로 유도한 뒤, 새 토큰을 발급받아 자동으로 다시 로그인
+                  상태로 전환되도록 구현했습니다. 이 과정을 사용자에게 노출되지
+                  않게 구성하여 UX를 유지했습니다.
+                </div>
+              </div>
+            </div>
+            <div class="ts-item">
+              <div class="ts-icon">✅</div>
+              <div>
+                <div class="ts-label">성과</div>
+                <div class="ts-content">
+                  로그아웃 없이 인증을 유지할 수 있어, 사용자 입장에서 끊김 없는
+                  경험을 제공함
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2>🌱 프로젝트를 통해 얻은 점</h2>
+
+          <div class="insight">
+            <div class="insight-title">
+              웹 서비스 아키텍처에 대한 실전 감각 향상
+            </div>
+            <div class="insight-body">
+              상태 관리, 캐싱, API 통신, 인증 처리 등 프론트엔드의 주요 레이어
+              간 역할과 상호작용을 직접 구현하며 체득함.<br />
+              <span class="insight-example"
+                >예시: React Query로 캐시 관리, Zustand로 전역 상태 공유, Axios
+                인터셉터 기반 인증 처리</span
+              >
+            </div>
+          </div>
+
+          <div class="insight">
+            <div class="insight-title">
+              확장성과 유지보수를 고려한 설계 경험 축적
+            </div>
+            <div class="insight-body">
+              컴포넌트 책임 분리, 상태 범위 조절, 반복 로직 추출 등 재사용성과
+              일관성을 고려한 개발 습관을 형성함.<br />
+              <span class="insight-example"
+                >예시: 공통 UI 컴포넌트 분리, props 전달 최소화를 위한 상위 구조
+                개선</span
+              >
+            </div>
+          </div>
+
+          <div class="insight">
+            <div class="insight-title">코드 리딩 및 협업 역량 향상</div>
+            <div class="insight-body">
+              팀원이 작성한 구조와 패턴을 빠르게 이해하고 기능 개발에 적용하며,
+              협업 과정에서의 의사소통과 코드 이해력이 크게 향상됨.
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section>
-        <h2 class="intro-header">프로젝트</h2>
-
+      <section class="project-section">
         <div class="project">
-          <h3>PICKUP</h3>
+          <h3>
+            <a
+              href="https://component-factory-cf4k.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Component Factory
+            </a>
+          </h3>
           <div class="project-meta">
-            <p><strong>기간:</strong> 2025.01 ~ 2025.03</p>
+            <p><strong>기간:</strong> 2024.08.05 ~ 2024.09.20</p>
             <p>
-              <strong>기술 스택:</strong> React Native, TypeScript, Firebase FCM
+              <strong>기술 스택:</strong> Next.js, React, Typescript, Zustand,
+              TailwindCSS, AWS EC2, NPM
             </p>
             <p>
-              <strong>유형:</strong> 사용자 맞춤형 스포츠 매칭 서비스 (팀
-              프로젝트)
+              <strong>유형:</strong> 다양한 UI 컴포넌트를 제공하는 라이브러리
+              (팀 프로젝트)
             </p>
           </div>
 
           <h4>역할</h4>
           <ul>
-            <li>프론트엔드 아키텍처 설계 및 구현</li>
-            <li><span class="highlight">이메일 인증</span> 회원가입 구현</li>
-            <li>매치 생성 및 참여 시스템 구현</li>
             <li>
-              <span class="highlight">FCM토큰</span>을 활용한 알림 기능 구현
+              주요 UI 컴포넌트(Alert, Breadcrumb, Dropdown 등) 개발 및 최적화
             </li>
-            <li>사용자 프로필 및 매치 관리 기능 구현</li>
-            <li>매치 참여자 수락/거절 메시지 알림 기능 구현</li>
+            <li>팀원 간 코드 리뷰 및 협업 진행</li>
+            <li>
+              코드의 재사용성, 유지보수성, 성능 최적화, 그리고 확장성 개선
+            </li>
           </ul>
 
           <h4>주요 개발 성과</h4>
           <ol>
             <li>
-              <strong>맞춤형 매칭 시스템 구현</strong>
+              <strong>컴포넌트 설계 및 개발</strong>
               <ul>
                 <li>
-                  사용자의 신체 정보(키, 몸무게), 포지션, 레벨을 고려한 맞춤형
-                  매칭 기능 구현
+                  다양한 컴포넌트(Alert, Breadcrumb, Dropdown 등)를 설계 및
+                  개발하여 재사용성 극대화
                 </li>
-                <li>
-                  React의 내장 상태 관리(useState, useEffect)를 활용한 효율적인
-                  데이터 핸들링
-                </li>
-                <li>
-                  Props drilling 최소화와 컴포넌트 구조 최적화로 외부 라이브러리
-                  없이 깔끔한 상태 관리 달성
-                </li>
+                <li>사용자 정의 속성을 통한 유연한 스타일링 시스템 구현</li>
+                <li>학습 곡선을 낮추기 위한 실시간 렌더링 시스템 구현</li>
               </ul>
             </li>
             <li>
-              <strong>실시간 알림 시스템 개발</strong>
+              <strong>실시간 렌더링 시스템</strong>
               <ul>
-                <li>Firebase Cloud Messaging(FCM)을 활용한 푸시 알림 구현</li>
                 <li>
-                  매치 생성, 수락/거절, 완료 상태에 따른 알림 처리 로직 개발
+                  코드 수정 시 실시간으로 컴포넌트를 렌더링하도록 시스템 구현
                 </li>
-                <li>앱 내 실시간 메시지 표시 시스템 구축</li>
+                <li>개발자 경험(DX) 향상을 위한 Live Preview 기능 개발</li>
+                <li>
+                  다양한 디바이스 환경에서의 컴포넌트 동작 테스트 환경 구축
+                </li>
+                <div class="challenge-result">
+                  <strong>실시간 렌더링 시스템 데모:</strong>
+                </div>
+                <video class="demo-video" controls loop muted width="100%">
+                  <source
+                    src="./video/realtimeRendering.mov"
+                    type="video/mp4"
+                  />
+                  브라우저가 동영상 태그를 지원하지 않습니다.
+                </video>
               </ul>
             </li>
             <li>
-              <strong>성능 최적화</strong>
+              <strong>사용자 경험과 성능 최적화</strong>
               <ul>
-                <li>코드 분할과 지연 로딩을 통한 앱 초기 실행 시간 25% 단축</li>
-                <li>이미지 캐싱 구현으로 데이터 사용량 40% 절감</li>
-                <li>메모이제이션을 통한 불필요한 리렌더링 방지</li>
+                <li>
+                  로딩 상태 UX 개선을 위한 Skeleton 컴포넌트 구현으로 사용자
+                  체감 대기 시간 감소
+                </li>
+                <li>
+                  지연 로딩 및 코드 스플리팅 기법을 적용하여 초기 로드 시간 약
+                  30% 단축
+                </li>
+                <li>
+                  번들 사이즈 최적화(트리 쉐이킹, 동적 임포트)로 모바일
+                  환경에서의 성능 향상
+                </li>
+                <li>
+                  Unsplash API 연동 시 이미지 캐싱 및 최적화 처리로 데이터
+                  사용량 절감
+                </li>
               </ul>
             </li>
           </ol>
@@ -119,243 +408,77 @@
 
           <div class="challenge">
             <div class="challenge-problem">
-              <strong>문제:</strong> 사용자 계정의 신뢰성 확보와 스팸 계정
-              방지를 위한 안전한 회원가입 프로세스 필요
+              <strong>문제:</strong> 다양한 환경과 디자인 시스템에 유연하게 적용
+              가능한 컴포넌트 설계의 어려움
             </div>
             <div class="challenge-solution">
-              <strong>해결:</strong> 이메일 인증 코드 기반 회원가입 시스템
-              구현으로 실제 이메일 소유 여부 확인 절차 도입
+              <strong>해결:</strong> 합성 패턴(Composition Pattern)과 Props
+              확장성을 고려한 컴포넌트 API 설계로 유연성 확보
             </div>
             <div class="challenge-result">
-              <strong>성과:</strong> 스팸 계정 생성 방지, 보안 강화 및 신뢰할 수
-              있는 사용자 데이터베이스 구축
+              <strong>성과:</strong> 다양한 디자인 요구사항에 쉽게 적응 가능한
+              컴포넌트 라이브러리 구축으로 재사용성 극대화
             </div>
             <div class="challenge-result">
-              <strong>이메일 인증 회원가입 흐름:</strong>
-              <image class="added-image" src="./image/emailVerification.png" />
-            </div>
-            <div class="challenge-result">
-              <strong>이메일 인증 시스템 장점:</strong>
-              <ul>
-                <li>사용자 신원 확인을 통한 서비스 신뢰성 향상</li>
-                <li>
-                  이메일 주소 검증으로 중요 알림 전달 보장 및 연락 가능성 확보
-                </li>
-                <li>타이머 기반 인증 코드 만료로 보안 강화</li>
-                <li>재시도 제한 및 인증 실패 처리로 무차별 대입 공격 방지</li>
-              </ul>
+              <strong>컴포넌트 합성 패턴 예시:</strong>
+              <image
+                class="added-image"
+                src="./image/composition-pattern.png"
+              />
             </div>
           </div>
 
           <div class="challenge">
             <div class="challenge-problem">
-              <strong>문제:</strong> 토큰 기반 인증 시스템에서 AccessToken 탈취
-              시 보안 취약점 발생 가능성
+              <strong>문제:</strong> DropdownMenu 컴포넌트에서 Trigger(메뉴를
+              여는 버튼)와 Content(메뉴 내용)가 서로 다른 컴포넌트로 분리되어
+              있어 상태를 공유하기 어려움
             </div>
             <div class="challenge-solution">
-              <strong>해결:</strong> AccessToken과 RefreshToken을 분리하여 이중
-              보안 체계 구축. AccessToken에 짧은 만료 시간(6시간)을 설정하고,
-              RefreshToken으로 자동 갱신되는 구조 구현
+              <strong>해결:</strong> Zustand 상태 관리 라이브러리를 도입하여
+              Trigger와 Content 간의 상태를 중앙에서 관리하도록 구현, 복잡한
+              props drilling 없이 각 컴포넌트에서 직접 상태에 접근 가능하게 함
             </div>
             <div class="challenge-result">
-              <strong>성과:</strong> 토큰 탈취 시에도 피해 범위 최소화 및 보안성
-              강화. 사용자 경험을 해치지 않으면서도 안전한 인증 시스템 구축
+              <strong>성과:</strong> 컴포넌트 간 상태 공유가 원활해지고,
+              불필요한 리렌더링 방지로 성능 향상, 코드 가독성과 유지보수성 개선
             </div>
             <div class="challenge-result">
-              <strong>토큰 재발급 흐름:</strong>
-              <image class="added-image" src="./image/RefreshToken.png" />
+              <strong>Zustand 상태 관리 패턴:</strong>
+              <image
+                class="added-image"
+                src="./image/zustand-state-management.png"
+              />
             </div>
           </div>
 
           <div class="challenge">
             <div class="challenge-problem">
-              <strong>문제:</strong> 각 컴포넌트에서 중복되는 API 호출 로직과
-              토큰 관리로 인한 코드 중복 및 일관성 부재
+              <strong>문제:</strong> 사용자가 UI 컴포넌트 라이브러리를 학습할
+              때, 문서만 읽어서는 실제 사용 방법을 이해하기 어렵고, 컴포넌트
+              사용법을 실험해보려면 개발 환경을 직접 세팅해야 하는 불편함이
+              있었습니다
             </div>
             <div class="challenge-solution">
-              <strong>해결:</strong> Axios 인스턴스를 활용한 HTTP 클라이언트
-              추상화 구현으로 API 서비스 레이어 구축
+              <strong>해결:</strong> Babel Standalone과
+              react-simple-code-editor를 활용하여 웹사이트 내에서 컴포넌트
+              코드를 직접 수정하고 그 결과를 실시간으로 확인할 수 있는 대화형
+              시스템 개발. 변환 엔진이 JSX 코드를 자동으로 해석해 실시간
+              미리보기를 제공합니다
             </div>
             <div class="challenge-result">
-              <strong>성과:</strong> 인터셉터를 통한 자동 토큰 갱신, 중앙화된
-              에러 처리, 그리고 API 호출 로직 재사용성 향상
+              <strong>성과:</strong> 사용자가 코드를 직접 수정하고 즉시 결과를
+              확인하며 실험할 수 있어 학습 곡선이 크게 완화되었고, "수정해보며
+              배우는" 직관적인 경험을 통해 컴포넌트 라이브러리 도입 장벽을
+              효과적으로 낮췄습니다
             </div>
             <div class="challenge-result">
-              <strong>API클라이언트 추상화 흐름:</strong>
-              <image class="added-image" src="./image/apiClient.png" />
+              <strong>실시간 렌더링 시스템 구조:</strong>
+              <image
+                class="added-image"
+                src="./image/renderingSystem.png"
+              ></image>
             </div>
-            <div class="challenge-result">
-              <strong>API클라이언트 추상화 장점:</strong>
-              <ul>
-                <li>인터셉터를 통한 요청/응답 전처리 및 후처리 자동화</li>
-                <li>토큰 관리와 갱신 프로세스를 중앙에서 처리</li>
-                <li>에러 처리 로직 표준화</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="project">
-            <h3><a href="https://component-factory.org/">Component Factory</a></h3>
-            <div class="project-meta">
-              <p><strong>기간:</strong> 2024.08.05 ~ 2024.09.20</p>
-              <p>
-                <strong>기술 스택:</strong> Next.js, React, Typescript, Zustand,
-                TailwindCSS, AWS EC2, NPM
-              </p>
-              <p>
-                <strong>유형:</strong> 다양한 UI 컴포넌트를 제공하는 라이브러리
-                (팀 프로젝트)
-              </p>
-            </div>
-
-            <h4>역할</h4>
-            <ul>
-              <li>
-                주요 UI 컴포넌트(Alert, Breadcrumb, Dropdown 등) 개발 및 최적화
-              </li>
-              <li>팀원 간 코드 리뷰 및 협업 진행</li>
-              <li>
-                코드의 재사용성, 유지보수성, 성능 최적화, 그리고 확장성 개선
-              </li>
-            </ul>
-
-            <h4>주요 개발 성과</h4>
-            <ol>
-              <li>
-                <strong>컴포넌트 설계 및 개발</strong>
-                <ul>
-                  <li>
-                    다양한 컴포넌트(Alert, Breadcrumb, Dropdown 등)를 설계 및
-                    개발하여 재사용성 극대화
-                  </li>
-                  <li>사용자 정의 속성을 통한 유연한 스타일링 시스템 구현</li>
-                  <li>학습 곡선을 낮추기 위한 실시간 렌더링 시스템 구현</li>
-                </ul>
-              </li>
-              <li>
-                <strong>실시간 렌더링 시스템</strong>
-                <ul>
-                  <li>
-                    코드 수정 시 실시간으로 컴포넌트를 렌더링하도록 시스템 구현
-                  </li>
-                  <li>개발자 경험(DX) 향상을 위한 Live Preview 기능 개발</li>
-                  <li>
-                    다양한 디바이스 환경에서의 컴포넌트 동작 테스트 환경 구축
-                  </li>
-                  <div class="challenge-result">
-                    <strong>실시간 렌더링 시스템 데모:</strong>
-                  </div>
-                  <video
-                    class="demo-video"
-                    controls
-                    loop
-                    muted
-                    width="100%"
-                  >
-                    <source
-                      src="./video/realtimeRendering.mov"
-                      type="video/mp4"
-                    />
-                    브라우저가 동영상 태그를 지원하지 않습니다.
-                  </video>
-                </ul>
-              </li>
-              <li>
-                <strong>사용자 경험과 성능 최적화</strong>
-                <ul>
-                  <li>
-                    로딩 상태 UX 개선을 위한 Skeleton 컴포넌트 구현으로 사용자
-                    체감 대기 시간 감소
-                  </li>
-                  <li>
-                    지연 로딩 및 코드 스플리팅 기법을 적용하여 초기 로드 시간 약
-                    30% 단축
-                  </li>
-                  <li>
-                    번들 사이즈 최적화(트리 쉐이킹, 동적 임포트)로 모바일
-                    환경에서의 성능 향상
-                  </li>
-                  <li>
-                    Unsplash API 연동 시 이미지 캐싱 및 최적화 처리로 데이터
-                    사용량 절감
-                  </li>
-                </ul>
-              </li>
-            </ol>
-
-            <h4>기술적 도전과 해결 방법</h4>
-
-            <div class="challenge">
-              <div class="challenge-problem">
-                <strong>문제:</strong> 다양한 환경과 디자인 시스템에 유연하게
-                적용 가능한 컴포넌트 설계의 어려움
-              </div>
-              <div class="challenge-solution">
-                <strong>해결:</strong> 합성 패턴(Composition Pattern)과 Props
-                확장성을 고려한 컴포넌트 API 설계로 유연성 확보
-              </div>
-              <div class="challenge-result">
-                <strong>성과:</strong> 다양한 디자인 요구사항에 쉽게 적응 가능한
-                컴포넌트 라이브러리 구축으로 재사용성 극대화
-              </div>
-              <div class="challenge-result">
-                <strong>컴포넌트 합성 패턴 예시:</strong>
-                <image
-                  class="added-image"
-                  src="./image/composition-pattern.png"
-                />
-              </div>
-            </div>
-
-            <div class="challenge">
-              <div class="challenge-problem">
-                <strong>문제:</strong> DropdownMenu 컴포넌트에서 Trigger(메뉴를
-                여는 버튼)와 Content(메뉴 내용)가 서로 다른 컴포넌트로 분리되어
-                있어 상태를 공유하기 어려움
-              </div>
-              <div class="challenge-solution">
-                <strong>해결:</strong> Zustand 상태 관리 라이브러리를 도입하여
-                Trigger와 Content 간의 상태를 중앙에서 관리하도록 구현, 복잡한
-                props drilling 없이 각 컴포넌트에서 직접 상태에 접근 가능하게 함
-              </div>
-              <div class="challenge-result">
-                <strong>성과:</strong> 컴포넌트 간 상태 공유가 원활해지고,
-                불필요한 리렌더링 방지로 성능 향상, 코드 가독성과 유지보수성
-                개선
-              </div>
-              <div class="challenge-result">
-                <strong>Zustand 상태 관리 패턴:</strong>
-                <image
-                  class="added-image"
-                  src="./image/zustand-state-management.png"
-                />
-              </div>
-            </div>
-
-            <div class="challenge">
-              <div class="challenge-problem">
-                <strong>문제:</strong> 사용자가 UI 컴포넌트 라이브러리를 학습할
-                때, 문서만 읽어서는 실제 사용 방법을 이해하기 어렵고, 컴포넌트
-                사용법을 실험해보려면 개발 환경을 직접 세팅해야 하는 불편함이
-                있었습니다
-              </div>
-              <div class="challenge-solution">
-                <strong>해결:</strong> Babel Standalone과
-                react-simple-code-editor를 활용하여 웹사이트 내에서 컴포넌트
-                코드를 직접 수정하고 그 결과를 실시간으로 확인할 수 있는 대화형
-                시스템 개발. 변환 엔진이 JSX 코드를 자동으로 해석해 실시간
-                미리보기를 제공합니다
-              </div>
-              <div class="challenge-result">
-                <strong>성과:</strong> 사용자가 코드를 직접 수정하고 즉시 결과를
-                확인하며 실험할 수 있어 학습 곡선이 크게 완화되었고, "수정해보며
-                배우는" 직관적인 경험을 통해 컴포넌트 라이브러리 도입 장벽을
-                효과적으로 낮췄습니다
-              </div>
-              <div class="challenge-result">
-                <strong>실시간 렌더링 시스템 구조:</strong>
-                <image class="added-image" src="./image/renderingSystem.png"></image>
-              </div>
           </div>
         </div>
       </section>
