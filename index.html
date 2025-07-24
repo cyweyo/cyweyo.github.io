@@ -465,13 +465,24 @@
                 <strong>컴포넌트 설계 및 개발</strong>
                 <ul>
                   <li>
-                    Alert, Breadcrumb, Dropdown 등 다양한 UI 컴포넌트를 설계 및
-                    개발하여 <strong>재사용성과 일관성</strong> 확보
+                    Alert, Breadcrumb, Dropdown, Pagination, Sheet, Skeleton,
+                    Textarea 컴포넌트를 설계 및 개발하여
+                    <strong>재사용성과 일관성</strong> 확보
                   </li>
                   <li>
-                    props 기반 사용자 정의 속성 설계로
-                    <strong>유연한 스타일링 시스템</strong> 제공
+                    단순 컴포넌트(Pagination, Skeleton 등)는
+                    <strong>props 기반 사용자 정의 설계</strong>로 구현해
+                    <strong>간편한 사용성과 유연한 스타일링</strong> 제공
                   </li>
+                  <li>
+                    Dropdown, Modal 등 복잡한 구조의 컴포넌트는
+                    <strong>합성 패턴(composition pattern)</strong>으로 설계하여
+                    <strong>자유로운 레이아웃 구성과 확장성</strong> 확보
+                  </li>
+                  <img
+                    src="./image/PropsAndComposition.png"
+                    class="added-image"
+                  />
                 </ul>
               </li>
 
@@ -500,7 +511,6 @@
                     src="./video/realtimeRendering.mov"
                     type="video/mp4"
                   />
-                  브라우저가 동영상 태그를 지원하지 않습니다.
                 </video>
               </li>
 
